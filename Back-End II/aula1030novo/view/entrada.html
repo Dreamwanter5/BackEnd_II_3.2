@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="../control/produtocontrol.php" method="POST">
+        <input type="hidden" name="acao" value="inserir">
+        Nome:      <input name="nome" /> <br>
+        Descrição: <textarea name="descricao"></textarea> <br>
+        Categoria: <select name="categoria">
+            <option value="ELETRÔNICOS">Eletrônicos</option>
+            <option value="UTENSÍLIOS">Utensílios</option>
+            <option value="ROUPA">Roupa</option>
+        </select>
+        <br>
+        Preço:     <input name="preco" type="number" step="0.01" /><br>
+        Estoque:   <input name="estoque" type="number" min="0" /><br>
+        <button>Cadastrar</button>
+    </form>
+</body>
+</html>

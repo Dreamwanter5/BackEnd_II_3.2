@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Cadastro de Produtos</h3><br>
+    <form action="home.php" method="post">
+        Nome do Produto: <input type="text" name="nomeProduto"><br>
+        Descrição: <textarea name="descricao" id="Text"></textarea><br>
+        Categoria do produto: <select name="tipo_categoria">
+            <option value="Eletrônicos">Eletrônicos</option>
+            <option value="Utensílios">Utensílios</option>
+            <option value="Roupa">Roupa</option>
+        </select>
+        <br>
+        Preço <input type="number" name="precoProduto" step="0.01"><br>
+        <!-- Isso fará com que o número aumente centavo por centavo. -->
+        Quantidade em estoque <input type="number" name="quantidadeEstoque"><br>
+        <button>Enviar</button>
+
+    </form>
+</body>
+</html>
